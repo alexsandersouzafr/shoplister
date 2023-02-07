@@ -22,7 +22,7 @@ export default function Home() {
       </Head>
       <main className="flex flex-col items-center h-screen">
         <div className="text-4xl p-16 font-bold text-blue-100">SHOPLISTER</div>
-        <div className="max-w-xl">
+        <div className="max-w-lg">
           <ListContext.Provider value={{ state, dispatch }}>
             <List />
           </ListContext.Provider>
