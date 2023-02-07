@@ -20,7 +20,7 @@ export default function Home() {
         <title>Shoplister</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <main className="flex flex-col items-center h-screen">
+      <main className="flex flex-col items-center">
         <div className="text-4xl py-16 font-bold text-blue-100">SHOPLISTER</div>
         <div>
           <ListContext.Provider value={{ state, dispatch }}>

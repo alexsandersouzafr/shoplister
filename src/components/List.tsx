@@ -5,12 +5,13 @@ import { useContext } from "react";
 export default function List() {
   const { state, dispatch } = useContext(ListContext);
   return (
-    <div className="grid w-full gap-4">
+    <div className="grid gap-4 transition-all">
       {state.map((item) => (
         <ListItem key={item.id} item={item} />
       ))}
+
       <button
-        className="p-4 mt-4 bg-blue-500 text-white rounded-lg"
+        className="p-4 bg-blue-500 text-white rounded-lg"
         onClick={() => dispatch({ type: "add" })}
       >
         Add Item
