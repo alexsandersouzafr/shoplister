@@ -1,12 +1,12 @@
 import Item, { ListContext } from "@/features/context";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 
 type Props = {
   item: Item;
 };
 
 export default function ListItem({ item }: Props) {
-  const { state, dispatch } = useContext(ListContext);
+  const { dispatch } = useContext(ListContext);
 
   return (
     <div className="flex text-lg gap-4 items-baseline">
@@ -14,7 +14,7 @@ export default function ListItem({ item }: Props) {
         <input
           type="text"
           placeholder="item name"
-          className="p-2 rounded-lg bg-blue-100  focus:border-blue-500"
+          className="p-2 rounded-lg bg-blue-100 focus:border-blue-500"
           value={item.name}
           onChange={(e) => {
             dispatch({
@@ -31,7 +31,7 @@ export default function ListItem({ item }: Props) {
       <div>
         <input
           type="number"
-          className="p-2 rounded-lg w-32 bg-blue-50 focus:border-blue-500"
+          className="p-2 rounded-lg w-16 bg-blue-50 focus:border-blue-500"
           value={item.quantity}
           onChange={(e) => {
             dispatch({

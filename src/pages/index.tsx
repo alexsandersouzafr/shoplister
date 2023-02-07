@@ -21,8 +21,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className="flex flex-col items-center h-screen">
-        <div className="text-4xl p-16 font-bold text-blue-100">SHOPLISTER</div>
-        <div className="max-w-lg">
+        <div className="text-4xl py-16 font-bold text-blue-100">SHOPLISTER</div>
+        <div>
           <ListContext.Provider value={{ state, dispatch }}>
             <List />
           </ListContext.Provider>
