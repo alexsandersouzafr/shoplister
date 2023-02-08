@@ -30,6 +30,7 @@ export default function ListItem({ item }: Props) {
         type="number"
         className="p-2 rounded-lg w-12 md:w-16 bg-blue-50"
         value={item.quantity}
+        placeholder="0"
         onChange={(e) => {
           dispatch({
             type: "edit",

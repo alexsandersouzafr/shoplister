@@ -3,7 +3,7 @@ import { Dispatch, createContext } from "react";
 export default interface Item {
   id: number;
   name: string;
-  quantity: number;
+  quantity: number | null;
 }
 
 interface ContextType {
@@ -24,9 +24,9 @@ export function listReducer(state: Item[], action: Action): Item[] {
       return [
         ...state,
         {
-          id: state.length + 1,
+          id: Math.random(),
           name: "",
-          quantity: 0,
+          quantity: null,
         },
       ];
     case "edit":
