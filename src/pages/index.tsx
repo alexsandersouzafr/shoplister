@@ -28,6 +28,9 @@ export default function Home() {
           </ListContext.Provider>
         </div>
       </main>
+      <footer className="text-blue-100 text-center fixed bottom-0 w-full">
+        Developer by Alexsander Souza. | GitHub | LinkedIn | Portfolio
+      </footer>
     </>
   );
 }

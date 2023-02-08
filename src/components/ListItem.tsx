@@ -28,9 +28,10 @@ export default function ListItem({ item }: Props) {
       />
       <input
         type="number"
-        className="p-2 rounded-lg w-12 md:w-16 bg-blue-50"
-        value={item.quantity}
+        className="p-2 rounded-lg w-12 md:w-16 bg-blue-50 text-right"
+        value={item.quantity as number}
         placeholder="0"
+        min={1}
         onChange={(e) => {
           dispatch({
             type: "edit",
